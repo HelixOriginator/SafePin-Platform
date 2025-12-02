@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SafePin - Community Safety Intelligence Platform for data-driven safety insights and location-based intelligence">
+    <meta name="keywords" content="SafePin, community safety, urban security, AI analytics, public safety, smart city">
+    <meta name="author" content="Kallol Chakrabarti">
     <title>SafePin - Community Safety Intelligence Platform</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         body {
@@ -67,50 +72,6 @@
             color: #b0b0b0;
             margin-bottom: 30px;
             animation: fadeIn 1.5s ease;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 1.8s ease;
-        }
-
-        .btn {
-            padding: 15px 35px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: 600;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #7877c6 0%, #ff793f 100%);
-            color: white;
-            box-shadow: 0 5px 20px rgba(120, 119, 198, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(120, 119, 198, 0.6), 0 0 40px rgba(255, 121, 63, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #7877c6;
-            border: 2px solid #7877c6;
-        }
-
-        .btn-secondary:hover {
-            background: #7877c6;
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(120, 119, 198, 0.5);
         }
 
         .section {
@@ -234,6 +195,46 @@
             backdrop-filter: blur(10px);
         }
 
+        .insights-box {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(120, 119, 198, 0.1);
+            border: 1px solid rgba(120, 119, 198, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .insights-box h3 {
+            color: #ff793f;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .insights-content {
+            text-align: left;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        .insights-content p {
+            margin-bottom: 15px;
+        }
+
+        .collaboration-box {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(255, 121, 63, 0.1);
+            border: 1px solid rgba(255, 121, 63, 0.3);
+            border-radius: 15px;
+        }
+
+        .creator-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(120, 119, 198, 0.3);
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -270,12 +271,20 @@
                 font-size: 2.5em;
             }
 
+            h2 {
+                font-size: 2em;
+            }
+
             .section {
                 padding: 30px 20px;
             }
 
             .features-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .insights-box {
+                padding: 20px;
             }
         }
     </style>
@@ -287,16 +296,16 @@
             <p class="tagline">Community Safety Intelligence Platform</p>
             <p style="margin-bottom: 30px; font-size: 1.1em; color: #b0b0b0;">Empowering communities through data-driven safety insights and location-based intelligence</p>
             
-            <div style="max-width: 800px; margin: 40px auto; padding: 30px; background: rgba(120, 119, 198, 0.1); border: 1px solid rgba(120, 119, 198, 0.3); border-radius: 15px; backdrop-filter: blur(5px);">
-                <h3 style="color: #ff793f; margin-bottom: 20px; font-size: 1.5em;">💡 Genius Insights</h3>
-                <div style="text-align: left; color: #e0e0e0; line-height: 1.8;">
-                    <p style="margin-bottom: 15px;">🔍 <strong>Data Transforms Perception:</strong> SafePin doesn't just map incidents—it reveals patterns invisible to the naked eye, turning raw data into actionable intelligence.</p>
+            <div class="insights-box">
+                <h3>💡 Genius Insights</h3>
+                <div class="insights-content">
+                    <p>🔍 <strong>Data Transforms Perception:</strong> SafePin doesn't just map incidents—it reveals patterns invisible to the naked eye, turning raw data into actionable intelligence.</p>
                     
-                    <p style="margin-bottom: 15px;">🧭 <strong>Signal, Not Accusation:</strong> Every pin is a signal of community awareness, not a verdict. We empower informed decision-making without judgment.</p>
+                    <p>🧭 <strong>Signal, Not Accusation:</strong> Every pin is a signal of community awareness, not a verdict. We empower informed decision-making without judgment.</p>
                     
-                    <p style="margin-bottom: 15px;">🌐 <strong>Collective Intelligence:</strong> When communities share anonymously, individual experiences become collective wisdom—creating a safety network powered by truth.</p>
+                    <p>🌐 <strong>Collective Intelligence:</strong> When communities share anonymously, individual experiences become collective wisdom—creating a safety network powered by truth.</p>
                     
-                    <p>🚀 <strong>Prevention Over Reaction:</strong> By identifying patterns before they escalate, we shift from reactive policing to proactive community protection.</p>
+                    <p style="margin-bottom: 0;">🚀 <strong>Prevention Over Reaction:</strong> By identifying patterns before they escalate, we shift from reactive policing to proactive community protection.</p>
                 </div>
             </div>
         </header>
@@ -393,11 +402,11 @@
                 <span class="use-case">🏗️ Urban Planners</span>
                 <span class="use-case">👮 Public Safety Professionals</span>
             </div>
-            <div style="margin-top: 40px; padding: 25px; background: rgba(255, 121, 63, 0.1); border: 1px solid rgba(255, 121, 63, 0.3); border-radius: 15px;">
+            <div class="collaboration-box">
                 <p style="font-size: 1.1em; color: #e0e0e0; margin-bottom: 15px;">
                     <strong>🔗 Interested in contributing or piloting this concept?</strong>
                 </p>
-                <p style="color: #b0b0b0;">Reach out through GitHub Issues or connect with researchers and developers in urban safety and AI-powered analytics.</p>
+                <p style="color: #b0b0b0; margin-bottom: 0;">Reach out through GitHub Issues or connect with researchers and developers in urban safety and AI-powered analytics.</p>
             </div>
         </section>
 
@@ -406,10 +415,10 @@
             <p style="font-size: 1.1em; margin: 20px 0;">Released under the <strong>MIT License</strong></p>
             <p style="color: #b0b0b0;">Enabling research, government, and non-profit organizations to use and modify the platform with attribution</p>
             
-            <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(120, 119, 198, 0.3);">
+            <div class="creator-section">
                 <p style="font-size: 1.1em; color: #ff793f; margin-bottom: 10px;"><strong>Creator</strong></p>
                 <p style="font-size: 1.2em; color: #e0e0e0; margin-bottom: 5px;"><strong>Kallol Chakrabarti</strong></p>
-                <p style="color: #b0b0b0; margin-bottom: 20px;">Known as Kallol, Independent Researcher</p>
+                <p style="color: #b0b0b0; margin-bottom: 0;">Known as Kallol, Independent Researcher</p>
             </div>
             
             <p style="margin-top: 30px; color: #888;">Made with ❤️ for safer communities worldwide</p>
