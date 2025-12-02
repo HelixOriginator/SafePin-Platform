@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block any future admin or internal areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow search engines to find your sitemap
+Sitemap: https://yourusername.github.io/safepin/sitemap.xml
