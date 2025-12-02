@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
   <!-- Homepage -->
   <url>
-    <loc>https://yourusername.github.io/safepin/</loc>
+    <loc>https://helixoriginator.github.io/SafePin-Platform/</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
+
   <!-- Features Section -->
   <url>
-    <loc>https://yourusername.github.io/safepin/#features</loc>
+    <loc>https://helixoriginator.github.io/SafePin-Platform/#features</loc>
     <lastmod>2025-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Use Cases Section -->
+  <url>
+    <loc>https://helixoriginator.github.io/SafePin-Platform/#use-cases</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Future Vision Section -->
+  <url>
+    <loc>https://helixoriginator.github.io/SafePin-Platform/#future-vision</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Collaboration Section -->
+  <url>
+    <loc>https://helixoriginator.github.io/SafePin-Platform/#collaboration</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Footer / License Section -->
+  <url>
+    <loc>https://helixoriginator.github.io/SafePin-Platform/#footer</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
